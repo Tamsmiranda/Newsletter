@@ -1,0 +1,7 @@
+parameters:
+#    emtags_newsletter.example.class: Emtags\Bundle\NewsletterBundle\Example
+
+services:
+#    emtags_newsletter.example:
+#        class: %emtags_newsletter.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

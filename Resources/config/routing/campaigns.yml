@@ -1,0 +1,30 @@
+newsletter_campaigns:
+    pattern:  /
+    defaults: { _controller: "EmtagsNewsletterBundle:Campaigns:index" }
+
+newsletter_campaigns_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "EmtagsNewsletterBundle:Campaigns:show" }
+
+newsletter_campaigns_new:
+    pattern:  /new
+    defaults: { _controller: "EmtagsNewsletterBundle:Campaigns:new" }
+
+newsletter_campaigns_create:
+    pattern:  /create
+    defaults: { _controller: "EmtagsNewsletterBundle:Campaigns:create" }
+    requirements: { _method: post }
+
+newsletter_campaigns_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "EmtagsNewsletterBundle:Campaigns:edit" }
+
+newsletter_campaigns_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "EmtagsNewsletterBundle:Campaigns:update" }
+    requirements: { _method: post }
+
+newsletter_campaigns_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "EmtagsNewsletterBundle:Campaigns:delete" }
+    requirements: { _method: post }

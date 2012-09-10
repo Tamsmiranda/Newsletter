@@ -1,0 +1,34 @@
+newsletter_leads:
+    pattern:  /
+    defaults: { _controller: "EmtagsNewsletterBundle:Leads:index" }
+
+newsletter_leads_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "EmtagsNewsletterBundle:Leads:show" }
+
+newsletter_leads_disable:
+    pattern:  /{email}/disable
+    defaults: { _controller: "EmtagsNewsletterBundle:Leads:disable" }
+
+newsletter_leads_new:
+    pattern:  /new
+    defaults: { _controller: "EmtagsNewsletterBundle:Leads:new" }
+
+newsletter_leads_create:
+    pattern:  /create
+    defaults: { _controller: "EmtagsNewsletterBundle:Leads:create" }
+    requirements: { _method: post }
+
+newsletter_leads_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "EmtagsNewsletterBundle:Leads:edit" }
+
+newsletter_leads_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "EmtagsNewsletterBundle:Leads:update" }
+    requirements: { _method: post }
+
+newsletter_leads_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "EmtagsNewsletterBundle:Leads:delete" }
+    requirements: { _method: post }

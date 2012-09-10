@@ -1,0 +1,46 @@
+Emtags\Bundle\NewsletterBundle\Entity\Leads:
+    type: entity
+    table: leads
+    fields:
+        id:
+            id: true
+            type: integer
+            unsigned: false
+            nullable: false
+            generator:
+                strategy: IDENTITY
+        name:
+            type: string
+            length: 100
+            fixed: false
+            nullable: false
+        email:
+            type: string
+            length: 150
+            fixed: false
+            nullable: false
+        lastDispatch:
+            type: datetime
+            nullable: true
+            column: last_dispatch
+        enable:
+            type: boolean
+            nullable: false
+    manyToMany:
+        tag:
+            targetEntity: Tags
+            cascade: {  }
+            mappedBy: null
+            inversedBy: lead
+            joinTable:
+                name: leads_tags
+                joinColumns:
+                    -
+                        name: lead_id
+                        referencedColumnName: id
+                inverseJoinColumns:
+                    -
+                        name: tag_id
+                        referencedColumnName: id
+            orderBy: null
+    lifecycleCallbacks: {  }

@@ -1,0 +1,15 @@
+EmtagsNewsletterBundle_newsletter_leads:
+    resource: "@EmtagsNewsletterBundle/Resources/config/routing/leads.yml"
+    prefix:   /newsletter/leads
+EmtagsNewsletterBundle_newsletter_tags:
+    resource: "@EmtagsNewsletterBundle/Resources/config/routing/tags.yml"
+    prefix:   /newsletter/tags
+EmtagsNewsletterBundle_newsletter_dispatches:
+        resource: "@EmtagsNewsletterBundle/Resources/config/routing/dispatches.yml"
+        prefix:   /newsletter/dispatches
+EmtagsNewsletterBundle_newsletter_campaigns:
+        resource: "@EmtagsNewsletterBundle/Resources/config/routing/campaigns.yml"
+        prefix:   /newsletter/campaigns
+emtags_newsletter_homepage:
+    pattern:  /hello/{name}
+    defaults: { _controller: EmtagsNewsletterBundle:Default:index }

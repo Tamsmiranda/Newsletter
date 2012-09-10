@@ -1,0 +1,30 @@
+newsletter_dispatches:
+    pattern:  /
+    defaults: { _controller: "EmtagsNewsletterBundle:Dispatches:index" }
+
+newsletter_dispatches_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "EmtagsNewsletterBundle:Dispatches:show" }
+
+newsletter_dispatches_new:
+    pattern:  /new
+    defaults: { _controller: "EmtagsNewsletterBundle:Dispatches:new" }
+
+newsletter_dispatches_create:
+    pattern:  /create
+    defaults: { _controller: "EmtagsNewsletterBundle:Dispatches:create" }
+    requirements: { _method: post }
+
+newsletter_dispatches_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "EmtagsNewsletterBundle:Dispatches:edit" }
+
+newsletter_dispatches_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "EmtagsNewsletterBundle:Dispatches:update" }
+    requirements: { _method: post }
+
+newsletter_dispatches_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "EmtagsNewsletterBundle:Dispatches:delete" }
+    requirements: { _method: post }
